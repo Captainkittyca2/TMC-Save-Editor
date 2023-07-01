@@ -8,3 +8,5 @@ This is a work in progress save editor for The Legend of Zelda: The Minish Cap. 
 * modifying message speed
 * modifying brightness level
 * modifying health remaining
+* modifying current current area and room
+* modifying spawn animation
