@@ -61,6 +61,11 @@ with open(input('Enter filename with extension: '), "r+b") as input_file:
         raise IndexError("Message speed must be either 0, 1, 2.")
     input_file.seek(133)
     input_file.write(Speed.to_bytes())
+    health = int(input('Enter the amount of health remaining: '))
+    if health < 0 or health > 256:
+        raise IndexError("Health must be between 0 to maybe 256.")
+    input_file.seek(301)
+    input_file.write((health).to_bytes())
     input_file.seek(0)
     data = input_file.read()
     data = undo_reverse(data)
