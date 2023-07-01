@@ -6,7 +6,7 @@
 
 
 def CalculateChecksum(filenumber : int) -> int:
-    print('filenumbuh: ',filenumber)
+    #print('filenumbuh: ',filenumber)
     gameState = data[0x34 + (filenumber * 0x10):0x34 + (filenumber * 0x10) + 0x04]
     gameData = data[0x80 + (filenumber * 0x500):0x80 + (filenumber * 0x500) + 0x500]
     shortcheck = partial_check(gameState)
@@ -61,15 +61,16 @@ with open(input('Enter filename with extension: '), "r+b") as input_file:
         raise IndexError("Message speed must be either 0, 1, 2.")
     input_file.seek(133)
     input_file.write(Speed.to_bytes())
-    health = int(input('Enter the amount of health remaining: '))
-    if health < 0 or health > 256:
-        raise IndexError("Health must be between 0 to maybe 256.")
+    health = float(input('Enter the amount of health remaining: '))
+    health *= 8
+    if health < 0 or health > 160:
+        raise IndexError("Health must be between 0 to maybe 160.")
     input_file.seek(301)
-    input_file.write((health).to_bytes())
+    input_file.write(int(health).to_bytes())
     input_file.seek(0)
     data = input_file.read()
     data = undo_reverse(data)
-    print('Fire!!', filenumber)
+    #print('Fire!!', filenumber)
     CalculateChecksum(filenumber)
     newchecksum = CalculateChecksum(filenumber)
     input_file.seek(48+(filenumbuh*16))
