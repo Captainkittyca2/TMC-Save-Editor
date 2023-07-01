@@ -10,6 +10,7 @@
 
 ## Health remaining info:
 
+* Formula: (user's input value) * 8.
 * Values 1, 2, and 3 are all 1/4 hearts visually in-game, however, a value of 3 allows you to touch octorock 2 times before dying while values of 1 and 2 only allow octorock touch once.
 * Starting from value 4 (2/4 health), every 2 values increase the health amount by 1/4.
 * Starting from value 3 (1 octorock touch), every 2 values increase octorock touch amount by 1.
