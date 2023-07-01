@@ -5,3 +5,5 @@ This is a work in progress save editor for The Legend of Zelda: The Minish Cap. 
 ## Currently supported features:
 
 * modifying file names (for file 1)
+* modifying message speed
+* modifying brightness level
