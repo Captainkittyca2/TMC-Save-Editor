@@ -9,6 +9,16 @@
 * 0x12D: Health remaining. [more info](###-Health-remaining-info)
 
 
+
+
+
+
+
+
+
+
+
+
 ## Health remaining info:
 * value of 7 gives 3/4 of hearts remaining.
 * value of 20 (14 in hex) gives 2 hearts and a half remaining.
