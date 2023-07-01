@@ -42,10 +42,8 @@ with open(input('Enter filename with extension: '), "r+b") as input_file:
     if filenumber < 0 or filenumber > 2:
         raise IndexError("File number must be either 0, 1, 2.")
     filename = input('Enter new file name: ')
-    print(filename)
     filenameSpace = 6 - len(filename)
     xtraSpace = filenameSpace * "0"
-    print('fiehnumber: ',filenumber)
     input_file.seek(258 + (filenumber*1280))
     input_file.write(bytes([00,00,00,00,00,00]))
     input_file.seek(258 + (filenumber*1280))
@@ -53,6 +51,16 @@ with open(input('Enter filename with extension: '), "r+b") as input_file:
     if filenameSpace > 0:
         input_file.write(int(xtraSpace).to_bytes(filenameSpace, byteorder='little'))
     input_file.write(bytes(filename[::-1], 'ascii'))
+    brightness = int(input('Enter brightness between 0 to 2: '))
+    if brightness < 0 or brightness > 2:
+        raise IndexError("Brightness must be either 0, 1, 2.")
+    input_file.seek(132)
+    input_file.write(brightness.to_bytes())
+    Speed = int(input('Enter message speed between 0 to 2: '))
+    if Speed < 0 or Speed > 2:
+        raise IndexError("Message speed must be either 0, 1, 2.")
+    input_file.seek(133)
+    input_file.write(Speed.to_bytes())
     input_file.seek(0)
     data = input_file.read()
     data = undo_reverse(data)
