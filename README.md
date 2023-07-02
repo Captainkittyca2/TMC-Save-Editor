@@ -11,3 +11,4 @@ This is a work in progress save editor for The Legend of Zelda: The Minish Cap. 
 * modifying rupees remaining
 * modifying current area and room
 * modifying spawn animation
+* modifying spawn points
