@@ -12,3 +12,4 @@ This is a work in progress save editor for The Legend of Zelda: The Minish Cap. 
 * modifying current area and room
 * modifying spawn animation
 * modifying spawn points
+* hatless or not (will cause issues)
