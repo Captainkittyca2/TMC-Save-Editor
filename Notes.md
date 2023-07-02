@@ -6,7 +6,7 @@
 * 0x84: Brightness value (0 to 2).
 * 0x85: Message Speed value (0 to 2).
 * 0x86: value = 1: Link resume from the map he left from. value != 1: Link resumes from the house on the bed.
-* 0x108->0x10C: Spawn point info. [more info](#spawn-point-info)
+* 0x108->0x10C: Spawn point. [more info](#spawn-point-info)
 * 0x10C: Spawn point animation.
 * 0x10E->0x10F: room ID and area ID respectively.
 * 0x12D: Health remaining. [more info](#health-remaining-info)
@@ -17,7 +17,6 @@
 * 0x109 = small y position.
 * 0x10A = big x position.
 * 0x10B = small x position.
-* 0x10C = spawn animation.
 
 ## Health remaining info:
 
