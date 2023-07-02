@@ -10,6 +10,7 @@
 * 0x10C: Spawn point animation.
 * 0x10E->0x10F: room ID and area ID respectively.
 * 0x12D: Health remaining. [more info](#health-remaining-info)
+* 0x2D9: hatless Link (0x08) or hat Link (0x38).
 
 ## Spawn point info:
 
