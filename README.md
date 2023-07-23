@@ -7,9 +7,11 @@ This is a work-in-progress save editor for The Legend of Zelda: The Minish Cap. 
 * modifying file names
 * modifying message speed
 * modifying brightness level
+* modifying amount of hearts
 * modifying health remaining
 * modifying rupees remaining
 * modifying current area and room
 * modifying spawn animation
 * modifying spawn points
 * hatless or not (will cause issues)
+* Triforce or not (file select)
