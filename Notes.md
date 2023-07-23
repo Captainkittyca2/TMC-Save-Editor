@@ -11,6 +11,7 @@
 * 0x10C: Spawn point animation.
 * 0x10E->0x10F: room ID and area ID respectively.
 * 0x12D: Health remaining. [more info](#health-remaining-info)
+* 0x146->0x147: Rupee amount. [more info](#rupee-info)
 * 0x2D9: hatless Link (0x08) or hat Link (0x38).
 
 ## Spawn point info:
@@ -27,3 +28,10 @@
 * Starting from value 4 (2/4 health), every 2 values increase the health amount by 1/4.
 * Starting from value 3 (1 octorock touch), every 2 values increase octorock touch amount by 1.
 * [Some documentation.](https://docs.google.com/spreadsheets/d/1yzXh2QSfBaXGAapngyejzW3H_ALxxMkaxuRX4HG2dis/edit?usp=sharing) (F to I)
+
+## Rupee info:
+
+* 0x147 is the main offset for rupees value.
+* After reaching 256 rupees, offset 0x146 will exceed the value of 0 to 1, and the value of offset 0x147 will reset to 0.
+* Every time after reaching a rupee value that is a multiple of 256, offset 0x146 will add a value of 1 on top of its current value, and offset 0x147 will reset to 0.
+* If your rupee value is higher than 999, any amount of rupees you spend in-game will lower your rupee value to 999 at least.
