@@ -56,20 +56,39 @@ with open(input('Enter filename with extension: '), "r+b") as input_file:
     #    raise IndexError("Brightness must be either 0, 1, 2.")
     #input_file.seek(132 + (filenumbuh*1280))
     #input_file.write(brightness.to_bytes())
-    Speed = int(input('Enter message speed between 0 to 2: '))
-    if Speed < 0 or Speed > 2:
-        raise IndexError("Message speed must be either 0, 1, 2.")
-    input_file.seek(133 + (filenumbuh*1280))
-    input_file.write(Speed.to_bytes())
+    #Speed = int(input('Enter message speed between 0 to 2: '))
+    #if Speed < 0 or Speed > 2:
+        #raise IndexError("Message speed must be either 0, 1, 2.")
+    #input_file.seek(133 + (filenumbuh*1280))
+    #input_file.write(Speed.to_bytes())
+    Tri = int(input('Triforce=1, else=0: '))
+    input_file.seek(129 + (filenumbuh*1280))
+    input_file.write(int(Tri).to_bytes())
+    hearts = int(input('Enter the amount of hearts currently: '))
+    hearts *= 8
+    if hearts < 0 or hearts > 160:
+        raise IndexError('Hearts must be between 0 to 20')
+    input_file.seek(300 + (filenumbuh*1280))
+    input_file.write(int(hearts).to_bytes())
     health = float(input('Enter the amount of health remaining: '))
     health *= 8
     if health < 0 or health > 160:
-        raise IndexError("Health must be between 0 to maybe 160.")
+        raise IndexError("Health must be between 0 to 20.")
     input_file.seek(301 + (filenumbuh*1280))
     input_file.write(int(health).to_bytes())
-    #rupees = int(input('Enter amount of rupees: '))
-    #input_file.seek(327 + (filenumbuh*1280))
-    #input_file.write((rupees).to_bytes())
+    rupees = int(input('Enter amount of rupees: '))
+    input_file.seek(326 + (filenumbuh*1280))
+    if rupees > 255 and rupees < 512:
+        input_file.write(bytes([1]))
+        rupees -= 256
+    elif rupees > 511 and rupees < 768:
+        input_file.write(bytes([2]))
+        rupees -= 512
+    elif rupees > 767 and rupees < 1024:
+        input_file.write(bytes([3]))
+        rupees -= 768
+    else: input_file.write(bytes([0]))
+    input_file.write((rupees).to_bytes())
     #spawnPointyBig = int(input('Enter spawn point y big: '))
     #input_file.seek(264)
     #input_file.write((spawnPointyBig).to_bytes())
@@ -82,14 +101,14 @@ with open(input('Enter filename with extension: '), "r+b") as input_file:
     #spawnPointxSmall = int(input('Enter spawn point x small: '))
     #input_file.seek(267)
     #input_file.write((spawnPointxSmall).to_bytes())
-    #spawnAnim = int(input('Enter spawn animation: '))
-    #input_file.seek(268)
-    #input_file.write((spawnAnim).to_bytes())
+    spawnAnim = int(input('Enter spawn animation: '))
+    input_file.seek(268 + (filenumbuh*1280))
+    input_file.write((spawnAnim).to_bytes())
     #room = int(input('Enter room of area to spawn in: '))
-    #input_file.seek(270)
+    #input_file.seek(270 + (filenumbuh*1280))
     #input_file.write((room).to_bytes())
     #area = int(input('Enter area to spawn in: '))
-    #input_file.seek(271)
+    #input_file.seek(271 + (filenumbuh*1280))
     #input_file.write((area).to_bytes())
     #Ezlo = int(input('Enter 8 for hatless or 38 for hat: '))
     #input_file.seek(729)
