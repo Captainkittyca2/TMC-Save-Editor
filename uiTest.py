@@ -1,5 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog, QSpinBox, QDoubleSpinBox, QCheckBox, QTabWidget, QComboBox, QLineEdit, QAction
+import string
 import sys
 
 class UI(QMainWindow):
@@ -49,6 +50,12 @@ class UI(QMainWindow):
             file = open(fname[0], 'r+b')
             file.seek(301)
             health = ord(file.read(1)) / 8
+            file.seek(258)
+            name = file.read(6)
+            man = name[::-1]
+            name = man.rstrip(bytes.fromhex('00'))
+            man = name.decode()
+            self.name.setText(man)
             self.health.setValue(health)
     def mapInfo(self):
         if self.map.currentIndex() == 0:
