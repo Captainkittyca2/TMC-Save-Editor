@@ -14,7 +14,10 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTabWidget" name="tabWidget_7">
+   <widget class="QTabWidget" name="tabb">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -49,24 +52,69 @@
        <bool>false</bool>
       </property>
       <property name="currentText">
-       <string>Hyrule Town</string>
+       <string>Minish woods</string>
       </property>
       <property name="currentIndex">
        <number>0</number>
       </property>
       <item>
        <property name="text">
-        <string>Hyrule Town</string>
+        <string>Minish woods</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>North Hyrule Field</string>
+        <string>Minish village</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hyrule town</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hyrule field</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Castor Wilds</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ruins</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mt. Crenel</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Castle Garden</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cloud Tops</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Royal Valley</string>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Veil Falls</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lake Hylia</string>
        </property>
       </item>
      </widget>
@@ -182,7 +230,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>Map</string>
+       <string>Area</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -194,7 +242,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>560</x>
+        <x>650</x>
         <y>660</y>
         <width>251</width>
         <height>31</height>
@@ -273,7 +321,7 @@
      <widget class="QLabel" name="label_84">
       <property name="geometry">
        <rect>
-        <x>560</x>
+        <x>650</x>
         <y>630</y>
         <width>251</width>
         <height>25</height>
@@ -359,7 +407,7 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QSpinBox" name="spinBox_59">
+     <widget class="QSpinBox" name="Hearts">
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -431,7 +479,7 @@
      </widget>
      <widget class="QDoubleSpinBox" name="Health">
       <property name="enabled">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="geometry">
        <rect>
@@ -718,6 +766,9 @@
       </property>
      </widget>
      <widget class="QCheckBox" name="Tri">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>1120</x>
@@ -728,6 +779,9 @@
       </property>
       <property name="text">
        <string>Triforce</string>
+      </property>
+      <property name="tristate">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QComboBox" name="File">
@@ -755,6 +809,44 @@
        </property>
       </item>
      </widget>
+     <widget class="QSpinBox" name="room">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>660</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>1</number>
+      </property>
+      <property name="value">
+       <number>1</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_96">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>630</y>
+        <width>81</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Room</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
@@ -762,6 +854,35 @@
      </attribute>
     </widget>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>280</y>
+      <width>501</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Open a File to start!</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>tabb</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -792,6 +913,9 @@
    </property>
   </action>
   <action name="actionSave">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>Save</string>
    </property>
@@ -800,6 +924,9 @@
    </property>
   </action>
   <action name="actionNew">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>New</string>
    </property>
