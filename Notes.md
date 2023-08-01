@@ -13,6 +13,8 @@
 * 0x12D: Health remaining. [more info](#health-remaining-info)
 * 0x146->0x147: Rupee amount. [more info](#rupee-info)
 * 0x2D9: hatless Link (0x08) or hat Link (0x38).
+* [More documentation here](https://docs.google.com/spreadsheets/d/1yzXh2QSfBaXGAapngyejzW3H_ALxxMkaxuRX4HG2dis/edit?usp=sharing)
+* [More offset info here](https://docs.google.com/spreadsheets/d/18BenjxIwOQWMVOAbyhami8exrAcEObb_QiUU_7aqf48/edit?usp=sharing)
 
 ## Spawn point info:
 
