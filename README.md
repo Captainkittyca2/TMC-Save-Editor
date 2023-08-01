@@ -15,3 +15,6 @@ This is a work-in-progress save editor for The Legend of Zelda: The Minish Cap. 
 * modifying spawn points
 * hatless or not (will cause issues)
 * Triforce or not (file select)
+* Items on A and B buttons
+* Item checks
+* Item upgrades
