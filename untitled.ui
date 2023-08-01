@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1255</width>
-    <height>922</height>
+    <width>1282</width>
+    <height>949</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>TMC Save Editor</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="tabb">
@@ -23,7 +23,7 @@
       <x>0</x>
       <y>0</y>
       <width>1251</width>
-      <height>881</height>
+      <height>811</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -38,7 +38,7 @@
        <rect>
         <x>340</x>
         <y>660</y>
-        <width>211</width>
+        <width>241</width>
         <height>31</height>
        </rect>
       </property>
@@ -115,6 +115,386 @@
       <item>
        <property name="text">
         <string>Lake Hylia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lake/Woods Cave</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Beanstalks</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hyrule dig caves</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Melari's mine</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minish Paths 1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Crenel Minish Paths</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dig Caves 1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Crenel Dig Cave</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Festival Town</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Veil Falls Dig Cave</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Castor Wilds Dig Cave</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Outer FoW</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hylia Dig Caves</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Veil Falls Top</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minish House Interiors</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>House Interiors 1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>House Interiors 2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>House Interiors 3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tree Interiors</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dojo's</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Crenel Caves</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minish Cracks</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>House Interiors 4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Great Fairies</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Castor Caves</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Castor Darknut</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Armos Interiors</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Town Minish Holes</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minish Rafters</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Goron Cave</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wind Tribe Tower</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wind Tribe Tower Roof</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Caves</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Veil Falls Caves</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Royal Valley Graves</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minish Caves</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Castle Garden Minish Holes</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ezlo Cutscene</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hyrule Town Underground</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Garden Fountains</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hyrule Castle Cellar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Simon's simulation</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DWS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DWS Boss</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DWS Entry</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cave of Flames</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CoF Boss</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fortress of Winds</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FoW Top</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Inner Mazaal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Temple of Droplets</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hyrule Town Minish Caves</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Royal Crypt</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Palace of Winds</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PoW Boss</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sanctuary</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hyrule Castle</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sanctuary Entrance</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dark Hyrule Castle</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DHC Outside</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vaati's arms</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vaati 3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vaati 2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DHC Bridge</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unused</string>
        </property>
       </item>
      </widget>
@@ -242,7 +622,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>650</x>
+        <x>680</x>
         <y>660</y>
         <width>251</width>
         <height>31</height>
@@ -321,7 +701,7 @@
      <widget class="QLabel" name="label_84">
       <property name="geometry">
        <rect>
-        <x>650</x>
+        <x>680</x>
         <y>630</y>
         <width>251</width>
         <height>25</height>
@@ -426,7 +806,7 @@
        <number>3</number>
       </property>
      </widget>
-     <widget class="QSpinBox" name="spinBox_60">
+     <widget class="QSpinBox" name="Bomb">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -439,7 +819,7 @@
        <set>Qt::AlignCenter</set>
       </property>
       <property name="maximum">
-       <number>30</number>
+       <number>99</number>
       </property>
       <property name="value">
        <number>1</number>
@@ -546,13 +926,13 @@
        <set>Qt::AlignCenter</set>
       </property>
       <property name="maximum">
-       <number>1023</number>
+       <number>1279</number>
       </property>
       <property name="value">
        <number>0</number>
       </property>
      </widget>
-     <widget class="QSpinBox" name="spinBox_63">
+     <widget class="QSpinBox" name="Arrow">
       <property name="geometry">
        <rect>
         <x>180</x>
@@ -565,7 +945,7 @@
        <set>Qt::AlignCenter</set>
       </property>
       <property name="maximum">
-       <number>70</number>
+       <number>99</number>
       </property>
       <property name="value">
        <number>1</number>
@@ -711,7 +1091,7 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QSpinBox" name="spinBox_64">
+     <widget class="QSpinBox" name="heartPiece">
       <property name="geometry">
        <rect>
         <x>960</x>
@@ -724,7 +1104,7 @@
        <set>Qt::AlignCenter</set>
       </property>
       <property name="maximum">
-       <number>4</number>
+       <number>3</number>
       </property>
       <property name="value">
        <number>0</number>
@@ -743,7 +1123,7 @@
        <set>Qt::AlignCenter</set>
       </property>
       <property name="maximum">
-       <number>3</number>
+       <number>4</number>
       </property>
       <property name="value">
        <number>0</number>
@@ -784,35 +1164,13 @@
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QComboBox" name="File">
-      <property name="geometry">
-       <rect>
-        <x>450</x>
-        <y>40</y>
-        <width>91</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <item>
-       <property name="text">
-        <string>File 1</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>File 2</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>File 3</string>
-       </property>
-      </item>
-     </widget>
      <widget class="QSpinBox" name="room">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>570</x>
+        <x>600</x>
         <y>660</y>
         <width>61</width>
         <height>31</height>
@@ -834,7 +1192,7 @@
      <widget class="QLabel" name="label_96">
       <property name="geometry">
        <rect>
-        <x>560</x>
+        <x>590</x>
         <y>630</y>
         <width>81</width>
         <height>25</height>
@@ -847,11 +1205,1281 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
+     <widget class="QLabel" name="label_97">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>280</y>
+        <width>131</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bomb Bag</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="bombBag">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>310</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="maximum">
+       <number>3</number>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_98">
+      <property name="geometry">
+       <rect>
+        <x>1070</x>
+        <y>280</y>
+        <width>131</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Quiver</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="quiver">
+      <property name="geometry">
+       <rect>
+        <x>1110</x>
+        <y>310</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="maximum">
+       <number>3</number>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
     </widget>
-    <widget class="QWidget" name="tab_2">
+    <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Flags</string>
+      <string>Items</string>
      </attribute>
+     <widget class="QLabel" name="labelll">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>20</y>
+        <width>89</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>B</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="B">
+      <property name="geometry">
+       <rect>
+        <x>753</x>
+        <y>60</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>5</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Empty</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Smith Sword</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>White Sword</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>White Sword (red)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>White Sword (blue)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Four Sword</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bombs</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Remote Bombs</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bow</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bow (light arrows)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Boomerang</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Boomerang 2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Shield</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mirror Shield</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lantern</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lit Lantern</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gust Jar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cane of Pacci</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mole Mitts</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rocs Cape</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pegasus Boots</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ocarina of Wind</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bottle 1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bottle 2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bottle 3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bottle 4</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="A">
+      <property name="geometry">
+       <rect>
+        <x>993</x>
+        <y>60</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Empty</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Smith Sword</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>White Sword</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>White Sword (red)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>White Sword (blue)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Four Sword</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bombs</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Remote Bombs</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bow</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bow (light arrows)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Boomerang</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Boomerang 2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Shield</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mirror Shield</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lantern</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lit Lantern</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gust Jar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cane of Pacci</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mole Mitts</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rocs Cape</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pegasus Boots</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ocarina of Wind</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bottle 1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bottle 2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bottle 3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bottle 4</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="labell">
+      <property name="geometry">
+       <rect>
+        <x>1060</x>
+        <y>20</y>
+        <width>89</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>A</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>ITEMS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="shield">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>180</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Shield</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="sword">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>140</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sword</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="boots">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>220</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pegasus Boots</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cane">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>140</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cane of Pacci</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="gust">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>140</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Gust Jar</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="mitts">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>180</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mole Mitts</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="lantern">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>180</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lantern</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cape">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>220</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rocs Cape</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ocarina">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>220</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ocarina of Wind</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="bow">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>220</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bow</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="bombs">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>180</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bombs</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="boomerang">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>140</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Boomerang</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>300</y>
+        <width>191</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bottle 1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="bottle1">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>340</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Empty</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>lon lon milk</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>half lon lon milk</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>red potion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>blue potion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>water</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>hot spring water</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>fairy</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>red picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>orange picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>yellow picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>green picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>blue picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>white picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>nayru charm</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>farore charm</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="bottle2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>340</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Empty</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>lon lon milk</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>half lon lon milk</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>red potion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>blue potion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>water</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>hot spring water</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>fairy</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>red picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>orange picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>yellow picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>green picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>blue picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>white picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>nayru charm</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>farore charm</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>300</y>
+        <width>191</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bottle 2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="bottle3">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>340</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Empty</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>lon lon milk</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>half lon lon milk</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>red potion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>blue potion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>water</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>hot spring water</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>fairy</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>red picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>orange picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>yellow picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>green picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>blue picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>white picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>nayru charm</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>farore charm</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>300</y>
+        <width>191</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bottle 3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="bottle4">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>340</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Empty</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>lon lon milk</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>half lon lon milk</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>red potion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>blue potion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>water</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>hot spring water</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>fairy</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>red picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>orange picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>yellow picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>green picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>blue picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>white picolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>nayru charm</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>farore charm</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>300</y>
+        <width>191</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bottle 4</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="Bottle1">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>260</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bottle 1</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="Bottle2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>260</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bottle 2</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="Bottle3">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>260</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bottle 3</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="Bottle4">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>260</y>
+        <width>191</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bottle 4</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="oShield">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>730</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Small Shield</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mirror Shield</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>690</y>
+        <width>191</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Shield</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="oBoom">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>730</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Boomerang 1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Boomerang 2</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>690</y>
+        <width>191</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Boomerang</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="oBow">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>730</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Regular Arrows</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Light Arrows</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>690</y>
+        <width>191</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bow</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>690</y>
+        <width>191</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bomb</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="oBomb">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>730</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Bombs</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Remote Bombs</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>630</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Upgrades</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>690</y>
+        <width>191</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sword</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="oSword">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>730</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Smith Sword</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>White Sword</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>White Sword (red)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>White Sword (blue)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Four Sword</string>
+       </property>
+      </item>
+     </widget>
     </widget>
    </widget>
    <widget class="QLabel" name="label">
@@ -860,10 +2488,10 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>280</y>
-      <width>501</width>
-      <height>301</height>
+      <x>0</x>
+      <y>230</y>
+      <width>1281</width>
+      <height>431</height>
      </rect>
     </property>
     <property name="font">
@@ -872,7 +2500,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Open a File to start!</string>
+     <string>Open a Save File to start! </string>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -881,15 +2509,58 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>820</y>
+      <width>1281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Beta 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="File">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>820</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>File 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>File 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>File 3</string>
+     </property>
+    </item>
+   </widget>
    <zorder>label</zorder>
    <zorder>tabb</zorder>
+   <zorder>label_3</zorder>
+   <zorder>File</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1255</width>
+     <width>1282</width>
      <height>38</height>
     </rect>
    </property>
