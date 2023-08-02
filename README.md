@@ -30,8 +30,7 @@ This is a work-in-progress save editor for The Legend of Zelda: The Minish Cap. 
 ### In-game
 | File Select                            | Item Menu                            |
 | ----------------------------------- | ----------------------------------- |
-| ![image](https://github.com/Captainkittyca2/TMC-Save-Editor/assets/68467449/7eaa9eb4-8b92-4a91-ab4a-9ce925ec1a16) | ![image](https://github.com/Captainkittyca2/TMC-Save-Editor/assets/68467449/6018f771-8a22-4754-a1c9-a426d88f9b5f)
- |
+| ![image](https://github.com/Captainkittyca2/TMC-Save-Editor/assets/68467449/7eaa9eb4-8b92-4a91-ab4a-9ce925ec1a16) | ![image](https://github.com/Captainkittyca2/TMC-Save-Editor/assets/68467449/6018f771-8a22-4754-a1c9-a426d88f9b5f) |
 
 
 
