@@ -20,14 +20,19 @@ This is a work-in-progress save editor for The Legend of Zelda: The Minish Cap. 
 * Items on A and B buttons
 * Item checks
 * Item upgrades
+
 ## Preview
+### Editor
 | Misc. tab                            | Items tab                            |
 | ----------------------------------- | ----------------------------------- |
 | ![image](https://github.com/Captainkittyca2/TMC-Save-Editor/assets/68467449/8b9ae139-3bb2-4f4c-8148-c8620f8392d2) | ![image](https://github.com/Captainkittyca2/TMC-Save-Editor/assets/68467449/322b918d-f683-4563-9e72-03c0bf9e4fea) |
 
+### In-game
+| File Select                            | Item Menu                            |
+| ----------------------------------- | ----------------------------------- |
+| ![image](https://github.com/Captainkittyca2/TMC-Save-Editor/assets/68467449/7eaa9eb4-8b92-4a91-ab4a-9ce925ec1a16) | ![image](https://github.com/Captainkittyca2/TMC-Save-Editor/assets/68467449/6018f771-8a22-4754-a1c9-a426d88f9b5f)
+ |
 
 
 
-
-![image](https://github.com/Captainkittyca2/TMC-Save-Editor/assets/68467449/7eaa9eb4-8b92-4a91-ab4a-9ce925ec1a16)
 
