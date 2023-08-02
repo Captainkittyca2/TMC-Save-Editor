@@ -10,6 +10,8 @@ This is a work-in-progress save editor for The Legend of Zelda: The Minish Cap. 
 * Amount of hearts
 * Health remaining
 * Rupees remaining
+* Bomb and Arrow ammo
+* Quiver and Bomb bag level
 * Current area and room
 * Spawn animation
 * Spawn points
@@ -18,3 +20,6 @@ This is a work-in-progress save editor for The Legend of Zelda: The Minish Cap. 
 * Items on A and B buttons
 * Item checks
 * Item upgrades
+* ## Preview
+  ![image](https://github.com/Captainkittyca2/TMC-Save-Editor/assets/68467449/7eaa9eb4-8b92-4a91-ab4a-9ce925ec1a16)
+
