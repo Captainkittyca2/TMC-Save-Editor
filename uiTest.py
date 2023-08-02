@@ -1,4 +1,4 @@
-from PyQt5 import QtCore, QtGui, QtWidgets, uic
+from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QApplication, QTabWidget, QLabel, QFileDialog, QSpinBox, QDoubleSpinBox, QCheckBox, QComboBox, QLineEdit, QAction
 import sys
 
@@ -9,6 +9,8 @@ class UI(QMainWindow):
     Be = 0
     openFile = False
     folenmbr = 0
+    bam = (0).to_bytes()
+    arae = 0
     
     def __init__(self):
         super(UI, self).__init__()
@@ -41,6 +43,7 @@ class UI(QMainWindow):
         self.room = self.findChild(QSpinBox, 'room')
         self.anm = self.findChild(QComboBox, 'SpwnAnm')
         self.customize = self.findChild(QCheckBox, 'customize')
+        self.hat = self.findChild(QCheckBox, 'Hatless')
         self.A = self.findChild(QComboBox, 'A')
         self.B = self.findChild(QComboBox, 'B')
         self.sword = self.findChild(QCheckBox, 'sword')
@@ -96,12 +99,17 @@ class UI(QMainWindow):
         self.hearts.setValue(3)
         self.health.setValue(3)
         self.map.setCurrentIndex(0)
-        self.mapInfo()
+        self.coordYb.setValue(0)
+        self.coordYs.setValue(24)
+        self.coordXb.setValue(1)
+        self.coordXs.setValue(248)
+        self.anm.setCurrentIndex(0)
         self.customize.setChecked(False)
         self.chucked()
         self.rupees.setValue(0)
         self.arrow.setValue(0)
         self.bomb.setValue(0)
+        self.hat.setChecked(True)
         self.A.setCurrentIndex(0)
         self.B.setCurrentIndex(0)
         self.sword.setChecked(False)
@@ -150,14 +158,19 @@ class UI(QMainWindow):
             file.seek(200 + sav)
             if file.read(8) == b'\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF':
                 return
-            file.seek(326 + sav)
-            self.rupee(file)
             file.seek(306 + sav)
             self.Be = int(ord(file.read(1)))
             self.Ae = int(ord(file.read(1)))
             self.Ba()
             self.Aa()
+            file.seek(729 + sav)
+            hat = format(int(ord(file.read(1))), 'b')
+            posBinn = [i for i, digit in enumerate(reversed(hat), 1) if digit == '1']
+            if 5 in posBinn:
+                self.hat.setChecked(False)
+            else: self.hat.setChecked(True)
             file.seek(368 + sav)
+            self.folenmbr = self.file.currentIndex()
             self.itemCheck(file)
             file.seek(296 + sav)
             self.quiver.setValue(int(ord(file.read(1))))
@@ -168,6 +181,8 @@ class UI(QMainWindow):
             health = ord(file.read(1)) / 8
             self.heartP.setValue(int(ord(file.read(1))))
             self.wallt.setValue(ord(file.read(1)))
+            file.seek(326 + sav)
+            self.rupee(file)
             file.seek(258 + sav)
             name = file.read(6)
             man = name[::-1]
@@ -175,7 +190,8 @@ class UI(QMainWindow):
             man = name.decode()
             file.seek(271 + sav)
             bam = file.read(1)
-            self.maap(bam)
+            self.arae = ord(bam)
+            self.maap()
             file.seek(129 + sav)
             trii = file.read(1)
             if trii == bytes.fromhex('00'):
@@ -190,6 +206,7 @@ class UI(QMainWindow):
             self.openFile = False
 
     def mapInfo(self):
+        self.maap()
         if self.map.currentIndex() == 0:
             self.coordYb.setValue(0)
             self.coordYs.setValue(24)
@@ -270,12 +287,75 @@ class UI(QMainWindow):
             self.coordXs.setEnabled(False)
             self.room.setEnabled(False)
             self.anm.setEnabled(False)
-    def maap(self,bam):
+    def maap(self):
+        if self.openFile == True:
+            mop = self.arae
+            if mop > 14 and mop <= 26:
+                mop -= 1
+            elif mop > 31 and mop <= 56:
+                mop -= 6
+            elif mop > 64 and mop <= 69:
+                mop -= 14
+            elif mop > 70 and mop <= 74:
+                mop -= 15
+            elif mop == 77:
+                mop -= 17
+            elif mop > 79 and mop <= 81:
+                mop -= 19
+            elif mop > 86 and mop <= 90:
+                mop -= 24
+            elif mop > 94 and mop <= 96:
+                mop -= 28
+            elif mop == 98:
+                mop -= 29
+            elif mop > 102 and mop <= 104:
+                mop -= 33
+            elif mop > 110 and mop <= 113:
+                mop -= 39
+            elif mop > 118 and mop <= 120:
+                mop -= 44
+            elif mop > 126 and mop <= 129:
+                mop -= 50
+            elif mop > 134 and mop <= 141:
+                mop -= 55
+            elif mop == 143:
+                mop -= 56
+            self.map.setCurrentIndex(mop)
         self.room.setValue(1)
         room = False
-        self.map.setCurrentIndex(ord(bam))
         mop = self.map.currentIndex()
-        if self.map.currentIndex() != (0 or 2 or 4 or 7 or 10 or 12 or 15 or 16 or 20 or 21 or 22 or 23 or 26 or 49 or 56 or 68 or 69 or 73 or 74 or 77 or 81 or 87 or 89 or 95 or 111 or 113 or 119 or 127 or 129 or 135 or 139 or 140 or 141 or 143):
+        if mop > 13 and mop <= 25:
+            mop += 1
+        elif mop > 25 and mop <= 50:
+            mop += 6
+        elif mop > 50 and mop <= 55:
+            mop += 14
+        elif mop > 55 and mop <= 59:
+            mop += 15
+        elif mop == 60:
+            mop += 17
+        elif mop > 60 and mop <= 62:
+            mop += 19
+        elif mop > 62 and mop <= 66:
+            mop += 24
+        elif mop > 66 and mop <= 68:
+            mop += 28
+        elif mop == 69:
+            mop += 29
+        elif mop > 69 and mop <= 71:
+            mop += 33
+        elif mop > 71 and mop <= 74:
+            mop += 39
+        elif mop > 74 and mop <= 76:
+            mop += 44
+        elif mop > 76 and mop <= 79:
+            mop += 50
+        elif mop > 79 and mop <= 86:
+            mop += 55
+        elif mop == 87:
+            mop += 56
+        self.arae = mop
+        if mop == 1 or mop == 3 or mop == 5 or mop == 6 or mop == 8 or mop == 9 or mop == 11 or mop == 13 or mop == 17 or mop == 18 or mop == 19 or mop == 24 or mop == 25 or (mop >= 32 and mop <= 48) or (mop >= 50 and mop <= 55) or (mop >= 65 and mop <= 67) or mop == 71 or mop == 72 or mop == 80 or mop == 88 or mop == 90 or mop == 96 or mop == 98 or mop == 104 or mop == 112 or mop == 120 or mop == 128 or (mop >= 136 and mop <= 138):
             room = True
         if room == True:
             if mop == 1:
@@ -292,6 +372,98 @@ class UI(QMainWindow):
                 self.room.setMaximum(2)
             elif mop == 11:
                 self.room.setMaximum(2)
+            elif mop == 13:
+                self.room.setMaximum(10)
+            elif mop == 17:
+                self.room.setMaximum(5)
+            elif mop == 18:
+                self.room.setMaximum(4)
+            elif mop == 19:
+                self.room.setMaximum(2)
+            elif mop == 24:
+                self.room.setMaximum(5)
+            elif mop == 25:
+                self.room.setMaximum(2)
+            elif mop == 32:
+                self.room.setMaximum(40)
+            elif mop == 33:
+                self.room.setMaximum(13)
+            elif mop == 34:
+                self.room.setMaximum(22)
+            elif mop == 35:
+                self.room.setMaximum(9)
+            elif mop == 36:
+                self.room.setMaximum(32)
+            elif mop == 37:
+                self.room.setMaximum(14)
+            elif mop == 38:
+                self.room.setMaximum(17)
+            elif mop == 39:
+                self.room.setMaximum(18)
+            elif mop == 40:
+                self.room.setMaximum(6)
+            elif mop == 41:
+                self.room.setMaximum(3)
+            elif mop == 42:
+                self.room.setMaximum(5)
+            elif mop == 43:
+                self.room.setMaximum(2)
+            elif mop == 44:
+                self.room.setMaximum(10)
+            elif mop == 45:
+                self.room.setMaximum(36)
+            elif mop == 46:
+                self.room.setMaximum(4)
+            elif mop == 47:
+                self.room.setMaximum(2)
+            elif mop == 48:
+                self.room.setMaximum(4)
+            elif mop == 50:
+                self.room.setMaximum(24)
+            elif mop == 51:
+                self.room.setMaximum(10)
+            elif mop == 52:
+                self.room.setMaximum(2)
+            elif mop == 53:
+                self.room.setMaximum(10)
+            elif mop == 54:
+                self.room.setMaximum(2)
+            elif mop == 55:
+                self.room.setMaximum(2)
+            elif mop == 65:
+                self.room.setMaximum(2)
+            elif mop == 66:
+                self.room.setMaximum(2)
+            elif mop == 67:
+                self.room.setMaximum(2)
+            elif mop == 71:
+                self.room.setMaximum(2)
+            elif mop == 72:
+                self.room.setMaximum(33)
+            elif mop == 80:
+                self.room.setMaximum(24)
+            elif mop == 88:
+                self.room.setMaximum(37)
+            elif mop == 90:
+                self.room.setMaximum(2)
+            elif mop == 96:
+                self.room.setMaximum(55)
+            elif mop == 98:
+                self.room.setMaximum(22)
+            elif mop == 104:
+                self.room.setMaximum(9)
+            elif mop == 112:
+                self.room.setMaximum(51)
+            elif mop == 120:
+                self.room.setMaximum(3)
+            elif mop == 128:
+                self.room.setMaximum(5)
+            elif mop == 136:
+                self.room.setMaximum(59)
+            elif mop == 137:
+                self.room.setMaximum(8)
+            elif mop == 138:
+                self.room.setMaximum(3)
         else: self.room.setMaximum(1)
     def Aa(self):
         if self.openFile == True:
@@ -401,12 +573,12 @@ class UI(QMainWindow):
             if 4 in posBin2:
                 if osf == 85:
                     self.sword.setChecked(True)
-                    self.oSword.setcurrentIndex(2)
+                    self.oSword.setCurrentIndex(2)
             if 1 in posBin2:
                 if osf == 1:
                     self.sword.setChecked(True)
                     self.oSword.setCurrentIndex(3)
-            if 5 in posBin2:
+            if (5 in posBin2):
                 self.sword.setChecked(True)
                 self.oSword.setCurrentIndex(4)
             file.seek(382 + (self.folenmbr*1280))
@@ -414,36 +586,36 @@ class UI(QMainWindow):
             posBin2 = [i for i, digit in enumerate(reversed(bin), 1) if digit == '1']
             if 1 in posBin2:
                 self.Bottle1.setChecked(True)
-                file.seek(305 + (self.folenmbr*1280))
-                bin = int(ord(file.read(1)))
-                if bin == 32:
-                    self.bottle1.setCurrentIndex(0)
-                elif bin > 32:
-                    self.bottle1.setCurrentIndex(bin - 33)
+            file.seek(305 + (self.folenmbr*1280))
+            bin = int(ord(file.read(1)))
+            if bin == 32:
+                self.bottle1.setCurrentIndex(0)
+            elif bin > 32:
+                self.bottle1.setCurrentIndex(bin - 33)
             if 3 in posBin2:
                 self.Bottle2.setChecked(True)
-                file.seek(304 + (self.folenmbr*1280))
-                bin = int(ord(file.read(1)))
-                if bin == 32:
-                    self.bottle2.setCurrentIndex(0)
-                elif bin > 32:
-                    self.bottle2.setCurrentIndex(bin - 33)
+            file.seek(304 + (self.folenmbr*1280))
+            bin = int(ord(file.read(1)))
+            if bin == 32:
+                self.bottle2.setCurrentIndex(0)
+            elif bin > 32:
+                self.bottle2.setCurrentIndex(bin - 33)
             if 5 in posBin2:
                 self.Bottle3.setChecked(True)
-                file.seek(319 + (self.folenmbr*1280))
-                bin = int(ord(file.read(1)))
-                if bin == 32:
-                    self.bottle3.setCurrentIndex(0)
-                elif bin > 32:
-                    self.bottle3.setCurrentIndex(bin - 33)
+            file.seek(319 + (self.folenmbr*1280))
+            bin = int(ord(file.read(1)))
+            if bin == 32:
+                self.bottle3.setCurrentIndex(0)
+            elif bin > 32:
+                self.bottle3.setCurrentIndex(bin - 33)
             if 7 in posBin2:
                 self.Bottle4.setChecked(True)
-                file.seek(318 + (self.folenmbr*1280))
-                bin = int(ord(file.read(1)))
-                if bin == 32:
-                    self.bottle4.setCurrentIndex(0)
-                elif bin > 32:
-                    self.bottle4.setCurrentIndex(bin - 33)
+            file.seek(318 + (self.folenmbr*1280))
+            bin = int(ord(file.read(1)))
+            if bin == 32:
+                self.bottle4.setCurrentIndex(0)
+            elif bin > 32:
+                self.bottle4.setCurrentIndex(bin - 33)
         elif self.openFile == False:
             RcPbO = 0b0
             GjCopMm = 0b0
@@ -505,28 +677,28 @@ class UI(QMainWindow):
                 else: RbBLABB += 0b00010000
             if self.Bottle1.isChecked() == True:
                 botte += 0b0001
-                if self.bottle1.currentIndex() == 0:
-                    botte1 += 32
-                elif self.bottle1.currentIndex() > 0:
-                    botte1 += (33 + self.bottle1.currentIndex())
+            if self.bottle1.currentIndex() == 0:
+                botte1 += 32
+            elif self.bottle1.currentIndex() > 0:
+                botte1 += (33 + self.bottle1.currentIndex())
             if self.Bottle2.isChecked() == True:
                 botte += 0b0100
-                if self.bottle2.currentIndex() == 0:
-                    botte2 += 32
-                elif self.bottle2.currentIndex() > 0:
-                    botte2 += (33 + self.bottle2.currentIndex())
+            if self.bottle2.currentIndex() == 0:
+                botte2 += 32
+            elif self.bottle2.currentIndex() > 0:
+                botte2 += (33 + self.bottle2.currentIndex())
             if self.Bottle3.isChecked() == True:
                 botte += 0b00010000
-                if self.bottle3.currentIndex() == 0:
-                    botte3 += 32
-                elif self.bottle3.currentIndex() > 0:
-                    botte3 += (33 + self.bottle3.currentIndex())
+            if self.bottle3.currentIndex() == 0:
+                botte3 += 32
+            elif self.bottle3.currentIndex() > 0:
+                botte3 += (33 + self.bottle3.currentIndex())
             if self.Bottle4.isChecked() == True:
                 botte += 0b01000000
-                if self.bottle4.currentIndex() == 0:
-                    botte4 += 32
-                elif self.bottle4.currentIndex() > 0:
-                    botte4 += (33 + self.bottle4.currentIndex())
+            if self.bottle4.currentIndex() == 0:
+                botte4 += 32
+            elif self.bottle4.currentIndex() > 0:
+                botte4 += (33 + self.bottle4.currentIndex())
             file.write((RcPbO).to_bytes())
             file.write((GjCopMm).to_bytes())
             file.write((ShLaMb).to_bytes())
@@ -535,6 +707,14 @@ class UI(QMainWindow):
             file.write((SwStuff1).to_bytes())
             file.seek(376 + (self.folenmbr*1280))
             file.write((SwStuff2).to_bytes())
+            file.seek(382 + (self.folenmbr*1280))
+            file.write((botte).to_bytes())
+            file.seek(304 + (self.folenmbr*1280))
+            file.write((botte2).to_bytes())
+            file.write((botte1).to_bytes())
+            file.seek(318 + (self.folenmbr*1280))
+            file.write((botte4).to_bytes())
+            file.write((botte3).to_bytes())
 
     def Save(self):
         def CalculateChecksum(filenumber : int) -> int:
@@ -623,16 +803,26 @@ class UI(QMainWindow):
         input_file.write((self.anm.currentIndex()).to_bytes())
         input_file.seek(270 + (filenumbuh*1280))
         input_file.write((self.room.value() - 1).to_bytes())
-        input_file.write((self.map.currentIndex()).to_bytes())
+        input_file.write((self.arae).to_bytes())
         input_file.seek(306 + (filenumbuh*1280))
         input_file.write((self.Be).to_bytes())
         input_file.write((self.Ae).to_bytes())
         input_file.seek(368 + (filenumbuh*1280))
         self.folenmbr = filenumbuh
         self.itemCheck(file)
-        #Ezlo = int(input('Enter 8 for hatless or 38 for hat: '))
-        #input_file.seek(729)
-        #input_file.write((Ezlo).to_bytes())
+        file.seek(729 + (filenumbuh*1280))
+        bat = ord(file.read(1))
+        hat = format(int(bat), 'b')
+        posBinn = [i for i, digit in enumerate(reversed(hat), 1) if digit == '1']
+        file.seek(729 + (filenumbuh*1280))
+        if self.hat.isChecked() == True:
+            if 5 in posBinn:
+                bat -= 0b00010000
+                file.write((bat).to_bytes())
+        else:
+            if 5 not in posBinn:
+                bat += 0b00010000
+                file.write((bat).to_bytes())
         filenumber = self.file.currentIndex()
         input_file.seek(0)
         data = input_file.read()
