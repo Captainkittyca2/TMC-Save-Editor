@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1282</width>
+    <width>1281</width>
     <height>949</height>
    </rect>
   </property>
@@ -22,7 +22,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1251</width>
+      <width>1281</width>
       <height>811</height>
      </rect>
     </property>
@@ -1788,9 +1788,9 @@
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>300</y>
-        <width>191</width>
+        <x>190</x>
+        <y>420</y>
+        <width>211</width>
         <height>25</height>
        </rect>
       </property>
@@ -1804,9 +1804,9 @@
      <widget class="QComboBox" name="bottle1">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>340</y>
-        <width>191</width>
+        <x>190</x>
+        <y>460</y>
+        <width>211</width>
         <height>31</height>
        </rect>
       </property>
@@ -1842,7 +1842,7 @@
       </item>
       <item>
        <property name="text">
-        <string>hot spring water</string>
+        <string>mineral water</string>
        </property>
       </item>
       <item>
@@ -1894,9 +1894,9 @@
      <widget class="QComboBox" name="bottle2">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>340</y>
-        <width>191</width>
+        <x>410</x>
+        <y>460</y>
+        <width>211</width>
         <height>31</height>
        </rect>
       </property>
@@ -1932,7 +1932,7 @@
       </item>
       <item>
        <property name="text">
-        <string>hot spring water</string>
+        <string>mineral water</string>
        </property>
       </item>
       <item>
@@ -1984,9 +1984,9 @@
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>300</y>
-        <width>191</width>
+        <x>410</x>
+        <y>420</y>
+        <width>211</width>
         <height>25</height>
        </rect>
       </property>
@@ -2000,9 +2000,9 @@
      <widget class="QComboBox" name="bottle3">
       <property name="geometry">
        <rect>
-        <x>450</x>
-        <y>340</y>
-        <width>191</width>
+        <x>630</x>
+        <y>460</y>
+        <width>211</width>
         <height>31</height>
        </rect>
       </property>
@@ -2038,7 +2038,7 @@
       </item>
       <item>
        <property name="text">
-        <string>hot spring water</string>
+        <string>mineral water</string>
        </property>
       </item>
       <item>
@@ -2090,9 +2090,9 @@
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>450</x>
-        <y>300</y>
-        <width>191</width>
+        <x>630</x>
+        <y>420</y>
+        <width>211</width>
         <height>25</height>
        </rect>
       </property>
@@ -2106,9 +2106,9 @@
      <widget class="QComboBox" name="bottle4">
       <property name="geometry">
        <rect>
-        <x>650</x>
-        <y>340</y>
-        <width>191</width>
+        <x>850</x>
+        <y>460</y>
+        <width>211</width>
         <height>31</height>
        </rect>
       </property>
@@ -2144,7 +2144,7 @@
       </item>
       <item>
        <property name="text">
-        <string>hot spring water</string>
+        <string>mineral water</string>
        </property>
       </item>
       <item>
@@ -2196,9 +2196,9 @@
      <widget class="QLabel" name="label_9">
       <property name="geometry">
        <rect>
-        <x>650</x>
-        <y>300</y>
-        <width>191</width>
+        <x>850</x>
+        <y>420</y>
+        <width>211</width>
         <height>25</height>
        </rect>
       </property>
@@ -2264,9 +2264,9 @@
      <widget class="QComboBox" name="oShield">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>290</x>
         <y>730</y>
-        <width>191</width>
+        <width>221</width>
         <height>31</height>
        </rect>
       </property>
@@ -2284,9 +2284,9 @@
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>290</x>
         <y>690</y>
-        <width>191</width>
+        <width>221</width>
         <height>25</height>
        </rect>
       </property>
@@ -2300,9 +2300,9 @@
      <widget class="QComboBox" name="oBoom">
       <property name="geometry">
        <rect>
-        <x>600</x>
+        <x>750</x>
         <y>730</y>
-        <width>191</width>
+        <width>221</width>
         <height>31</height>
        </rect>
       </property>
@@ -2320,9 +2320,9 @@
      <widget class="QLabel" name="label_11">
       <property name="geometry">
        <rect>
-        <x>600</x>
+        <x>750</x>
         <y>690</y>
-        <width>191</width>
+        <width>221</width>
         <height>25</height>
        </rect>
       </property>
@@ -2336,9 +2336,9 @@
      <widget class="QComboBox" name="oBow">
       <property name="geometry">
        <rect>
-        <x>400</x>
+        <x>520</x>
         <y>730</y>
-        <width>191</width>
+        <width>221</width>
         <height>31</height>
        </rect>
       </property>
@@ -2356,9 +2356,9 @@
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>400</x>
+        <x>520</x>
         <y>690</y>
-        <width>191</width>
+        <width>221</width>
         <height>25</height>
        </rect>
       </property>
@@ -2372,9 +2372,9 @@
      <widget class="QLabel" name="label_13">
       <property name="geometry">
        <rect>
-        <x>800</x>
+        <x>980</x>
         <y>690</y>
-        <width>191</width>
+        <width>221</width>
         <height>25</height>
        </rect>
       </property>
@@ -2388,9 +2388,9 @@
      <widget class="QComboBox" name="oBomb">
       <property name="geometry">
        <rect>
-        <x>800</x>
+        <x>980</x>
         <y>730</y>
-        <width>191</width>
+        <width>221</width>
         <height>31</height>
        </rect>
       </property>
@@ -2408,9 +2408,9 @@
      <widget class="QLabel" name="label_14">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>630</y>
-        <width>211</width>
+        <x>0</x>
+        <y>640</y>
+        <width>1281</width>
         <height>41</height>
        </rect>
       </property>
@@ -2429,9 +2429,9 @@
      <widget class="QLabel" name="label_15">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>60</x>
         <y>690</y>
-        <width>191</width>
+        <width>221</width>
         <height>25</height>
        </rect>
       </property>
@@ -2445,9 +2445,9 @@
      <widget class="QComboBox" name="oSword">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>60</x>
         <y>730</y>
-        <width>191</width>
+        <width>221</width>
         <height>31</height>
        </rect>
       </property>
@@ -2500,7 +2500,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Open a Save File to start! </string>
+     <string>Open a Save File to start!</string>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2550,6 +2550,34 @@
      </property>
     </item>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>1281</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CTRL+O or File -&gt; Open to open the save file.</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>tabb</zorder>
    <zorder>label_3</zorder>
@@ -2560,7 +2588,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1282</width>
+     <width>1281</width>
      <height>38</height>
     </rect>
    </property>
