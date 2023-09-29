@@ -14,8 +14,9 @@ class UI(QMainWindow):
     
     def __init__(self):
         super(UI, self).__init__()
-        uic.loadUi("untitled.ui", self)
+        uic.loadUi("GUI.ui", self)
 
+        self.setFixedSize(1281, 949)
         self.tab = self.findChild(QTabWidget, 'tabb')
         self.label = self.findChild(QLabel, 'label')
         self.new = self.findChild(QAction, 'actionNew')
@@ -279,14 +280,14 @@ class UI(QMainWindow):
             self.coordXb.setEnabled(True)
             self.coordXs.setEnabled(True)
             self.room.setEnabled(True)
-            self.anm.setEnabled(True)
+            self.map.setEnabled(True)
         elif self.customize.isChecked() == False:
             self.coordYb.setEnabled(False)
             self.coordYs.setEnabled(False)
             self.coordXb.setEnabled(False)
             self.coordXs.setEnabled(False)
             self.room.setEnabled(False)
-            self.anm.setEnabled(False)
+            self.map.setEnabled(False)
     def maap(self):
         if self.openFile == True:
             mop = self.arae
@@ -795,15 +796,17 @@ class UI(QMainWindow):
             rupees -= 1024
         else: input_file.write(bytes([0]))
         input_file.write((rupees).to_bytes())
-        input_file.seek(264 + (filenumbuh*1280))
-        input_file.write((self.coordYb.value()).to_bytes())
-        input_file.write((self.coordYs.value()).to_bytes())
-        input_file.write((self.coordXb.value()).to_bytes())
-        input_file.write((self.coordXs.value()).to_bytes())
+        if self.customize.isChecked() == True:
+            input_file.seek(264 + (filenumbuh*1280))
+            input_file.write((self.coordYb.value()).to_bytes())
+            input_file.write((self.coordYs.value()).to_bytes())
+            input_file.write((self.coordXb.value()).to_bytes())
+            input_file.write((self.coordXs.value()).to_bytes())
+            input_file.seek(270 + (filenumbuh*1280))
+            input_file.write((self.room.value() - 1).to_bytes())
+            input_file.write((self.arae).to_bytes())
+        input_file.seek(268 + (filenumbuh*1280))
         input_file.write((self.anm.currentIndex()).to_bytes())
-        input_file.seek(270 + (filenumbuh*1280))
-        input_file.write((self.room.value() - 1).to_bytes())
-        input_file.write((self.arae).to_bytes())
         input_file.seek(306 + (filenumbuh*1280))
         input_file.write((self.Be).to_bytes())
         input_file.write((self.Ae).to_bytes())
