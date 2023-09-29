@@ -618,7 +618,7 @@
      </widget>
      <widget class="QComboBox" name="SpwnAnm">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
@@ -719,7 +719,7 @@
        <rect>
         <x>270</x>
         <y>710</y>
-        <width>132</width>
+        <width>221</width>
         <height>29</height>
        </rect>
       </property>
@@ -2519,7 +2519,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Beta 1</string>
+     <string>Beta 2</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
