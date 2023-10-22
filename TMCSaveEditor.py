@@ -639,10 +639,10 @@ class UI(QMainWindow):
                   SwStuff1 += 85 
                 elif self.oSword.currentIndex() == 3:
                   SwStuff1 += 85
-                  SsSwFs += 1 
+                  SsWsFs += 1 
                 else:
                   SwStuff1 += 85   
-                  SsSwFs += 17
+                  SsWsFs += 17
             if self.cape.isChecked() == True:
                 RcPbO += 0b0001
             if self.boots.isChecked() == True:
