@@ -632,20 +632,17 @@ class UI(QMainWindow):
             botte4 = 0
             if self.sword.isChecked() == True:
                 if self.oSword.currentIndex() == 0:
-                    SwStuff1 += 5
-                    SwStuff2 += 6
+                  SwStuff1 += 5 
                 elif self.oSword.currentIndex() == 1:
-                    SwStuff1 += 21
-                    SwStuff2 += 10
+                  SwStuff1 += 21 
                 elif self.oSword.currentIndex() == 2:
-                    SsWsFs += 8
-                    SwStuff1 += 85
-                    SwStuff2 += 170
+                  SwStuff1 += 85 
                 elif self.oSword.currentIndex() == 3:
-                    SsWsFs += 1
-                    SwStuff1 += 1
-                    SwStuff2 += 2
-                else: SsWsFs += 16
+                  SwStuff1 += 85
+                  SsSwFs += 1 
+                else:
+                  SwStuff1 += 85   
+                  SsSwFs += 17
             if self.cape.isChecked() == True:
                 RcPbO += 0b0001
             if self.boots.isChecked() == True:
