@@ -2519,7 +2519,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Beta 2</string>
+     <string>Beta 3</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
