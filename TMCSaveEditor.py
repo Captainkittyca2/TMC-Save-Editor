@@ -625,7 +625,6 @@ class UI(QMainWindow):
             SsWsFs = 0b0
             botte = 0b0
             SwStuff1 = 0
-            SwStuff2 = 0
             botte1 = 0
             botte2 = 0
             botte3 = 0
@@ -703,8 +702,6 @@ class UI(QMainWindow):
             file.write((RbBLABB).to_bytes())
             file.write((SsWsFs).to_bytes())
             file.write((SwStuff1).to_bytes())
-            file.seek(376 + (self.folenmbr*1280))
-            file.write((SwStuff2).to_bytes())
             file.seek(382 + (self.folenmbr*1280))
             file.write((botte).to_bytes())
             file.seek(304 + (self.folenmbr*1280))
