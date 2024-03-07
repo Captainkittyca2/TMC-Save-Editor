@@ -25,7 +25,7 @@ This is a work-in-progress save editor for The Legend of Zelda: The Minish Cap. 
 ### Editor
 | Misc. tab                            | Items tab                            |
 | ----------------------------------- | ----------------------------------- |
-| ![image](https://media.discordapp.net/attachments/720582472433270877/1136287693723152525/git3.png?width=1400&height=1024) | ![image](https://media.discordapp.net/attachments/720582472433270877/1136287693987389481/git4.png?width=1450&height=1024) |
+| ![image](https://cdn.discordapp.com/attachments/720582472433270877/1136287693723152525/git3.png) | ![image](https://cdn.discordapp.com/attachments/720582472433270877/1136287693987389481/git4.png) |
 
 ### In-game
 | File Select                            | Item Menu                            |
