@@ -1,6 +1,7 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QApplication, QTabWidget, QLabel, QFileDialog, QSpinBox, QDoubleSpinBox, QCheckBox, QComboBox, QLineEdit, QAction
 import sys
+import os
 
 class UI(QMainWindow):
     fileOpen = False
@@ -16,7 +17,7 @@ class UI(QMainWindow):
         super(UI, self).__init__()
         uic.loadUi("GUI.ui", self)
 
-        self.setFixedSize(1281, 949)
+        self.setFixedSize(685, 490)
         self.tab = self.findChild(QTabWidget, 'tabb')
         self.label = self.findChild(QLabel, 'label')
         self.new = self.findChild(QAction, 'actionNew')
@@ -625,23 +626,27 @@ class UI(QMainWindow):
             SsWsFs = 0b0
             botte = 0b0
             SwStuff1 = 0
+            SwStuff2 = 0
             botte1 = 0
             botte2 = 0
             botte3 = 0
             botte4 = 0
             if self.sword.isChecked() == True:
                 if self.oSword.currentIndex() == 0:
-                  SwStuff1 += 5 
+                    SwStuff1 += 5
+                    SwStuff2 += 6
                 elif self.oSword.currentIndex() == 1:
-                  SwStuff1 += 21 
+                    SwStuff1 += 21
+                    SwStuff2 += 10
                 elif self.oSword.currentIndex() == 2:
-                  SwStuff1 += 85 
+                    SsWsFs += 8
+                    SwStuff1 += 85
+                    SwStuff2 += 170
                 elif self.oSword.currentIndex() == 3:
-                  SwStuff1 += 85
-                  SsWsFs += 1 
-                else:
-                  SwStuff1 += 85   
-                  SsWsFs += 17
+                    SsWsFs += 1
+                    SwStuff1 += 1
+                    SwStuff2 += 2
+                else: SsWsFs += 16
             if self.cape.isChecked() == True:
                 RcPbO += 0b0001
             if self.boots.isChecked() == True:
@@ -702,6 +707,8 @@ class UI(QMainWindow):
             file.write((RbBLABB).to_bytes())
             file.write((SsWsFs).to_bytes())
             file.write((SwStuff1).to_bytes())
+            file.seek(376 + (self.folenmbr*1280))
+            file.write((SwStuff2).to_bytes())
             file.seek(382 + (self.folenmbr*1280))
             file.write((botte).to_bytes())
             file.seek(304 + (self.folenmbr*1280))
@@ -865,6 +872,7 @@ class UI(QMainWindow):
             input_file.write(fourtofive)
 
 if __name__ == '__main__':
+    os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
     app = QApplication(sys.argv)
     UIWindow = UI()
     app.exec_()
