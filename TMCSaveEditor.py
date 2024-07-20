@@ -626,7 +626,6 @@ class UI(QMainWindow):
             SsWsFs = 0b0
             botte = 0b0
             SwStuff1 = 0
-            SwStuff2 = 0
             botte1 = 0
             botte2 = 0
             botte3 = 0
@@ -634,19 +633,16 @@ class UI(QMainWindow):
             if self.sword.isChecked() == True:
                 if self.oSword.currentIndex() == 0:
                     SwStuff1 += 5
-                    SwStuff2 += 6
                 elif self.oSword.currentIndex() == 1:
                     SwStuff1 += 21
-                    SwStuff2 += 10
                 elif self.oSword.currentIndex() == 2:
-                    SsWsFs += 8
                     SwStuff1 += 85
-                    SwStuff2 += 170
                 elif self.oSword.currentIndex() == 3:
                     SsWsFs += 1
-                    SwStuff1 += 1
-                    SwStuff2 += 2
-                else: SsWsFs += 16
+                    SwStuff1 += 85
+                else:
+                    SwStuff1 += 85
+                    SsWsFs += 17
             if self.cape.isChecked() == True:
                 RcPbO += 0b0001
             if self.boots.isChecked() == True:
@@ -707,8 +703,6 @@ class UI(QMainWindow):
             file.write((RbBLABB).to_bytes())
             file.write((SsWsFs).to_bytes())
             file.write((SwStuff1).to_bytes())
-            file.seek(376 + (self.folenmbr*1280))
-            file.write((SwStuff2).to_bytes())
             file.seek(382 + (self.folenmbr*1280))
             file.write((botte).to_bytes())
             file.seek(304 + (self.folenmbr*1280))
